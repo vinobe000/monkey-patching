@@ -1,0 +1,37 @@
+
+In [16]: class student():
+    ...:     def __init__(self,name,age,city):
+    ...:         self.name=name
+    ...:         self.age=age
+    ...:         self.city=city
+    ...:     def display(self):
+    ...:         print(f"{self.name,self.city,self.age}")
+    ...:         print("name={}".format(self.name))
+    ...:         print("name=%s"%self.name)
+    ...:
+
+In [17]: def displayage(self):
+    ...:     print(self.age)
+    ...:     print("age={}".format(self.age))
+    ...:     print("age=%d"%self.age)
+    ...:     print(f"{self.age}")
+    ...:
+
+In [18]: vinoth=student("vinoth",23,"salem")
+
+In [19]: student.displayage=displayage
+
+In [20]: vinoth=student("vinoth",23,"salem")
+
+In [21]: vinoth.displayage()
+23
+age=23
+age=23
+23
+
+In [22]: vinoth.display()
+('vinoth', 'salem', 23)
+name=vinoth
+name=vinoth
+
+In [23]:
